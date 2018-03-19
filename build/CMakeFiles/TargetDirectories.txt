@@ -1,0 +1,3 @@
+/home/odmen/repo/Arduino/build/CMakeFiles/rebuild_cache.dir
+/home/odmen/repo/Arduino/build/CMakeFiles/edit_cache.dir
+/home/odmen/repo/Arduino/build/CMakeFiles/a.out.dir

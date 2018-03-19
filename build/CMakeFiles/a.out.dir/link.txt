@@ -1,0 +1,1 @@
+/usr/bin/cc -std=c11 -Wall -pedantic-errors -Werror -Wno-unused  -rdynamic CMakeFiles/a.out.dir/main.c.o CMakeFiles/a.out.dir/src/port.c.o  -o a.out -lprogbase 
