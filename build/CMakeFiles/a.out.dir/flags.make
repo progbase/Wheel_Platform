@@ -6,5 +6,5 @@ C_FLAGS = -std=c11 -Wall -pedantic-errors -Werror -Wno-unused
 
 C_DEFINES = 
 
-C_INCLUDES = -I/home/odmen/repo/Arduino/include 
+C_INCLUDES = -I/home/odmen/repo/Wheel_Platform/include 
 

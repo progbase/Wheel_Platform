@@ -9,7 +9,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include "include/port.h"
-
+#include <termios.h>
 
 
 #define __USE_XOPEN_EXTENDED
@@ -30,21 +30,22 @@ int main(void) {
 
 	//mycode
     char C = '\0';
-    while (1) {
-    C = Console_getChar();
-    char input[2];
-    if(C == 'w'){
-        input[0] = '1';
-    }
-    else if(C == 's'){
-        input[0] = '0';
-    }
-    else{
-        input[0] = 2;
-    }
-   	 input[1] = '\n';
-   	 write(fd, &input, 2);
-   	 //usleep ((2 + 25) * 100);
+    while ((int)C != 27) {
+        C = Console_getChar();
+        char input[2];
+        if(C == 'w'){
+            input[0] = '1';
+        }
+        else if(C == 's'){
+            input[0] = '0';
+        }
+        else{
+            input[0] = 2;
+        }
+   	    input[1] = '\n';
+           puts(input);
+   	    write(fd, &input, 2);
+   	    usleep ((2 + 25) * 100);
     }
     return 0;
 }

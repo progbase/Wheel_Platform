@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/odmen/repo/Arduino/main.c" "/home/odmen/repo/Arduino/build/CMakeFiles/a.out.dir/main.c.o"
-  "/home/odmen/repo/Arduino/src/port.c" "/home/odmen/repo/Arduino/build/CMakeFiles/a.out.dir/src/port.c.o"
+  "/home/odmen/repo/Wheel_Platform/main.c" "/home/odmen/repo/Wheel_Platform/build/CMakeFiles/a.out.dir/main.c.o"
+  "/home/odmen/repo/Wheel_Platform/src/port.c" "/home/odmen/repo/Wheel_Platform/build/CMakeFiles/a.out.dir/src/port.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
