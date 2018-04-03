@@ -13,6 +13,7 @@
 
 
 #define __USE_XOPEN_EXTENDED
+#define _XOPEN_SOURCE 500 
 #define error_message(FMT, ...) printf(FMT, __VA_ARGS__)
 
 
@@ -27,25 +28,13 @@ int main(void) {
 
     set_interface_attribs (fd, B115200, 0);  // set speed to 115,200 bps, 8n1 (no parity)
     set_blocking (fd, 1);                	// set blocking
-
-	//mycode
-    char C = '\0';
-    while ((int)C != 27) {
-        C = Console_getChar();
-        char input[2];
-        if(C == 'w'){
-            input[0] = '1';
-        }
-        else if(C == 's'){
-            input[0] = '0';
-        }
-        else{
-            input[0] = 2;
-        }
-   	    input[1] = '\n';
-           puts(input);
-   	    write(fd, &input, 2);
-   	    usleep ((2 + 25) * 100);
+    //
+    while (1) {
+   	 printf("Select LED-mode: ");
+   	 char input[2] = "";
+   	 fgets(input, 2, stdin);
+   	 write(fd, &input, 2);
+   	 sleep (5);
     }
     return 0;
 }
