@@ -1,3 +1,0 @@
-/home/odmen/repo/Wheel_Platform/build/CMakeFiles/rebuild_cache.dir
-/home/odmen/repo/Wheel_Platform/build/CMakeFiles/edit_cache.dir
-/home/odmen/repo/Wheel_Platform/build/CMakeFiles/a.out.dir
